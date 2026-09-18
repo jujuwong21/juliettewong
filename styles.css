@@ -358,6 +358,20 @@ a.timeline-org:hover {
   }
 }
 
+.group-heading {
+  font-family: var(--body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 16px;
+}
+
+.group-heading + .timeline {
+  margin-bottom: 36px;
+}
+
 /* ---------------------------------------------------------
    Projects — index list
 --------------------------------------------------------- */
