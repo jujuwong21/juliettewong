@@ -1,202 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Juliette Wong — Portfolio</title>
-<meta name="description" content="Personal website for Juliette Wong, a data professional with a background in software engineering, analytics, and data quality.">
-<meta property="og:title" content="Juliette Wong — Portfolio">
-<meta property="og:description" content="Data professional with a background in software engineering, analytics, and data quality.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juliette Wong</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.png" />
+    <meta
+      name="description"
+      content="Personal website for Juliette Wong, a data professional with a background in software engineering, analytics, and data quality."
+    />
+    <meta property="og:title" content="Juliette Wong — Portfolio" />
+    <meta
+      property="og:description"
+      content="Data professional with a background in software engineering, analytics, and data quality."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">
+        <img src="assets/images/favicon.png" alt="JW" width="32" height="32" />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
 
-<header class="site-header">
-  <a class="wordmark" href="#top">JW</a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-  </nav>
-</header>
+    <main id="main">
+      <section class="hero" id="top">
+        <p class="hero-kicker">NYC-based Data professional</p>
+        <h1 class="hero-headline">
+          Hi there, I'm<br /><span>Juliette Wong.</span>
+        </h1>
+        <p class="hero-sub">
+          I build and safeguard the data people rely on to make decisions, and
+          every so often I turn it into something worth looking at.
+        </p>
+        <a class="hero-scroll" href="#about">Scroll down</a>
+      </section>
 
-<main id="main">
+      <section class="section about" id="about">
+        <div class="about-grid">
+          <figure class="about-photo">
+            <img
+              src="assets/images/portrait-juliette.jpg"
+              alt="Portrait of Juliette Wong"
+              loading="lazy"
+            />
+          </figure>
+          <div class="about-copy">
+            <h2 class="section-heading">About</h2>
+            <p>
+              I'm a data professional with a background spanning software
+              engineering, analytics, and data quality. I'm currently a Data
+              Quality Analyst at <strong>OptionMetrics</strong>, where I work on
+              the reliability and accuracy of financial data products.
+              Previously, I spent four years at Mastercard building and
+              improving self-service analytics products used by clients to
+              understand portfolio performance.
+            </p>
+            <p>
+              Alongside my professional work, I'm completing a
+              <strong>Master of Science in Analytics</strong> at Georgia Tech,
+              building on my undergraduate background in Mathematical Sciences
+              from <strong>Carnegie Mellon University</strong>. I'm particularly
+              interested in the intersection of data, technology, and
+              problem-solving.
+            </p>
+            <p>
+              Outside of work, I enjoy dancing, exploring New York's food scene,
+              volunteering, listening to K-R&amp;B (JUNNY is on repeat), and
+              watching the Mets (though maybe not in 2026).
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <section class="hero" id="top">
-    <p class="hero-kicker">Data professional, based in New York City</p>
-    <h1 class="hero-headline">Hi there, I'm<br><span>Juliette Wong.</span></h1>
-    <p class="hero-sub">I build and safeguard the data people rely on to make decisions — and every so often I turn it into something worth looking at.</p>
-    <a class="hero-scroll" href="#about">Scroll down</a>
-  </section>
+      <section class="section experience" id="experience">
+        <div class="section-head">
+          <h2 class="section-heading">Experience</h2>
+          <a
+            class="resume-link"
+            href="assets/resume/juliette-wong-resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >View résumé (PDF)</a
+          >
+        </div>
 
-  <section class="section about" id="about">
-    <div class="about-grid">
-      <figure class="about-photo">
-        <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698aad2f59bb5dc49113a4dc_IMG_4020%203.jpg" alt="Portrait of Juliette Wong" loading="lazy">
-      </figure>
-      <div class="about-copy">
-        <h2 class="section-heading">About</h2>
-        <p>I'm a data professional with a background spanning software engineering, analytics, and data quality. I'm currently a Data Quality Analyst at <strong>OptionMetrics</strong>, where I work on the reliability and accuracy of financial data products. Previously, I spent four years at Mastercard building and improving self-service analytics products used by clients to understand portfolio performance.</p>
-        <p>Alongside my professional work, I'm completing a <strong>Master of Science in Analytics</strong> at Georgia Tech, building on my undergraduate background in Mathematical Sciences from <strong>Carnegie Mellon University</strong>. I'm particularly interested in the intersection of data, technology, and problem-solving.</p>
-        <p>Outside of work, I enjoy dancing, exploring New York's food scene, volunteering, listening to K-R&amp;B (JUNNY is on repeat), and watching the Mets — with varying degrees of success.</p>
-      </div>
-    </div>
-  </section>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-date">Apr 2026 — Present</span>
+            <span class="timeline-role">Data Quality Analyst</span>
+            <a
+              class="timeline-org"
+              href="https://optionmetrics.com/"
+              target="_blank"
+              rel="noopener"
+              >OptionMetrics</a
+            >
+            <ul class="timeline-bullets">
+              <!-- DRAFT — replace with your own specifics -->
+              <li>
+                Lead data quality efforts for IvyDB TradeFlow, OptionMetrics'
+                intraday options order flow product, validating trade
+                classification, volume, and buy/sell pressure data prior to
+                release.
+              </li>
+              <li>
+                Investigate data anomalies and work with production pipelines to
+                identify and resolve quality issues across OptionMetrics'
+                options data and analytics products.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="timeline-date">Aug 2021 — Apr 2026</span>
+            <span class="timeline-role"
+              >Software Engineer, Quality
+              <span class="timeline-promo"
+                >(Quality I &rarr; Quality II)</span
+              ></span
+            >
+            <a
+              class="timeline-org"
+              href="https://www.mastercardservices.com/en/about"
+              target="_blank"
+              rel="noopener"
+              >Mastercard</a
+            >
+            <ul class="timeline-bullets">
+              <!-- DRAFT — replace with your own specifics -->
+              <li>
+                Built and improved self-service analytics products giving
+                clients insight into portfolio performance, spanning data
+                quality, validation, and reliability across a production
+                platform used by external customers.
+              </li>
+              <li>
+                Promoted from Quality I to Quality II over a four-year tenure.
+              </li>
+            </ul>
+          </li>
+          <li class="timeline-item--muted">
+            <span class="timeline-date">Jul — Aug 2020</span>
+            <span class="timeline-role">Summer Technology Analyst</span>
+            <a
+              class="timeline-org"
+              href="https://www.citigroup.com/citi/"
+              target="_blank"
+              rel="noopener"
+              >Citi</a
+            >
+          </li>
+          <li class="timeline-item--muted">
+            <span class="timeline-date">May — Aug 2019</span>
+            <span class="timeline-role">Business Analyst Intern</span>
+            <a
+              class="timeline-org"
+              href="https://www.grantstreet.com/"
+              target="_blank"
+              rel="noopener"
+              >Grant Street Group</a
+            >
+          </li>
+        </ol>
+      </section>
 
-  <section class="section experience" id="experience">
-    <div class="section-head">
-      <h2 class="section-heading">Experience</h2>
-      <a class="resume-link" href="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698ead9f381e4fbe4ab6c293_072b8e83d6e18e28fbda3a57510f1788_JulietteWong_Resume.pdf" target="_blank" rel="noopener">View résumé (PDF)</a>
-    </div>
+      <section class="section education" id="education">
+        <h2 class="section-heading">Education</h2>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-date">Expected Dec 2026</span>
+            <span class="timeline-role">Master of Science in Analytics</span>
+            <a
+              class="timeline-org"
+              href="https://pe.gatech.edu/degrees/analytics"
+              target="_blank"
+              rel="noopener"
+              >Georgia Institute of Technology — Computational Data Analytics
+              track</a
+            >
+          </li>
+          <li>
+            <span class="timeline-date">Aug 2017 — May 2021</span>
+            <span class="timeline-role"
+              >Bachelor of Science in Mathematical Sciences</span
+            >
+            <a
+              class="timeline-org"
+              href="https://www.cmu.edu/math/index.html"
+              target="_blank"
+              rel="noopener"
+              >Carnegie Mellon University — Operations Research &amp;
+              Statistics; minors in HCI and Chinese Studies</a
+            >
+          </li>
+        </ol>
+      </section>
 
-    <ol class="timeline">
-      <li>
-        <span class="timeline-date">Apr 2026 — Present</span>
-        <span class="timeline-role">Data Quality Analyst</span>
-        <a class="timeline-org" href="https://optionmetrics.com/" target="_blank" rel="noopener">OptionMetrics</a>
-        <ul class="timeline-bullets">
-          <!-- DRAFT — replace with your own specifics -->
-          <li>Work on the quality and reliability of financial data products, investigating data anomalies and validating datasets used in quantitative analysis and downstream applications.</li>
+      <section class="section projects" id="projects">
+        <div class="section-head">
+          <h2 class="section-heading">Selected projects</h2>
+          <a class="resume-link" href="projects-archive.html"
+            >View more projects &rarr;</a
+          >
+        </div>
+        <ul class="project-index">
+          <li class="project-row">
+            <a
+              class="project-thumb"
+              href="https://github.com/jujuwong21/CSE-6242-Project"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/images/proj-nyc-noise.png"
+                alt="Visualization of NYC 311 noise complaints"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-info">
+              <a
+                class="project-title"
+                href="https://github.com/jujuwong21/CSE-6242-Project"
+                target="_blank"
+                rel="noopener"
+                >Decoding Urban Noise in NYC 311 Data</a
+              >
+              <span class="project-meta">D3.js · Sep – Nov 2025</span>
+            </div>
+          </li>
+
+          <li class="project-row">
+            <a
+              class="project-thumb"
+              href="https://github.com/jujuwong21/MGT-6203-Project"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/images/proj-ufc.png"
+                alt="Exploratory data analysis of UFC fights"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-info">
+              <a
+                class="project-title"
+                href="https://github.com/jujuwong21/MGT-6203-Project"
+                target="_blank"
+                rel="noopener"
+                >UFC Fight Prediction and Analysis</a
+              >
+              <span class="project-meta">R (Tidyverse) · Feb – Apr 2024</span>
+            </div>
+          </li>
+
+          <li class="project-row">
+            <a
+              class="project-thumb"
+              href="https://drive.google.com/file/d/1N06SIcjneM5tt1p_nt49dgbMV0dOF_ZT/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/images/proj-flu-sim.png"
+                alt="Discrete flu epidemic transmission simulation"
+                loading="lazy"
+              />
+            </a>
+            <div class="project-info">
+              <a
+                class="project-title"
+                href="https://drive.google.com/file/d/1N06SIcjneM5tt1p_nt49dgbMV0dOF_ZT/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                >Discrete Flu Epidemic Transmission</a
+              >
+              <span class="project-meta">Python · Oct – Dec 2024</span>
+            </div>
+          </li>
         </ul>
-      </li>
-      <li>
-        <span class="timeline-date">Aug 2021 — Apr 2026</span>
-        <span class="timeline-role">Software Engineer, Quality <span class="timeline-promo">(Quality I &rarr; Quality II)</span></span>
-        <a class="timeline-org" href="https://www.mastercardservices.com/en/about" target="_blank" rel="noopener">Mastercard</a>
-        <ul class="timeline-bullets">
-          <!-- DRAFT — replace with your own specifics -->
-          <li>Built and improved self-service analytics products giving clients insight into portfolio performance, spanning data quality, validation, and reliability across a production platform used by external customers.</li>
-          <li>Promoted from Quality I to Quality II over a four-year tenure.</li>
-        </ul>
-      </li>
-      <li class="timeline-item--muted">
-        <span class="timeline-date">Jul — Aug 2020</span>
-        <span class="timeline-role">Summer Technology Analyst</span>
-        <a class="timeline-org" href="https://www.citigroup.com/citi/" target="_blank" rel="noopener">Citi</a>
-      </li>
-      <li class="timeline-item--muted">
-        <span class="timeline-date">May — Aug 2019</span>
-        <span class="timeline-role">Business Analyst Intern</span>
-        <a class="timeline-org" href="https://www.grantstreet.com/" target="_blank" rel="noopener">Grant Street Group</a>
-      </li>
-    </ol>
-  </section>
+      </section>
 
-  <section class="section education" id="education">
-    <h2 class="section-heading">Education</h2>
-    <ol class="timeline">
-      <li>
-        <span class="timeline-date">Expected Dec 2026</span>
-        <span class="timeline-role">Master of Science in Analytics</span>
-        <a class="timeline-org" href="https://pe.gatech.edu/degrees/analytics" target="_blank" rel="noopener">Georgia Institute of Technology — Computational Data Analytics track</a>
-      </li>
-      <li>
-        <span class="timeline-date">Aug 2017 — May 2021</span>
-        <span class="timeline-role">Bachelor of Science in Mathematical Sciences</span>
-        <a class="timeline-org" href="https://www.cmu.edu/math/index.html" target="_blank" rel="noopener">Carnegie Mellon University — Operations Research &amp; Statistics; minors in HCI and Chinese Studies</a>
-      </li>
-    </ol>
-  </section>
+      <section class="section research" id="research">
+        <h2 class="section-heading">Selected research</h2>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-date">Jan — May 2021</span>
+            <span class="timeline-role">Data Modeling Research Assistant</span>
+            <a
+              class="timeline-org"
+              href="http://www.pitt.edu/~jwheeler/BIG%20Problems.html"
+              target="_blank"
+              rel="noopener"
+              >University of Pittsburgh Math Department (MLB Project)</a
+            >
+          </li>
+          <li>
+            <span class="timeline-date">Jan — Jun 2020</span>
+            <span class="timeline-role"
+              >Data Visualization Research Assistant</span
+            >
+            <a
+              class="timeline-org"
+              href="https://ieeexplore.ieee.org/document/9833097"
+              target="_blank"
+              rel="noopener"
+              >Carnegie Mellon Computer Science Department</a
+            >
+          </li>
+        </ol>
+      </section>
 
-  <section class="section projects" id="projects">
-    <div class="section-head">
-      <h2 class="section-heading">Selected projects</h2>
-      <a class="resume-link" href="projects-archive.html">View more projects &rarr;</a>
-    </div>
-    <ul class="project-index">
+      <section class="section community" id="community">
+        <h2 class="section-heading">Community &amp; involvement</h2>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-date">Aug 2021 — Present</span>
+            <span class="timeline-role">Volunteering</span>
+            <a
+              class="timeline-org"
+              href="https://www.newyorkcares.org/home"
+              target="_blank"
+              rel="noopener"
+              >New York Cares — Family Literacy Program, La Jornada Food
+              Shelter, Sophomore Skills &amp; SAT Tutoring</a
+            >
+          </li>
+          <li>
+            <span class="timeline-date">Mar 2024 — Dec 2025</span>
+            <span class="timeline-role">ASIA BRG Committee Member</span>
+            <a
+              class="timeline-org"
+              href="https://www.mastercard.com/us/en/for-the-world/people/community-belonging.html"
+              target="_blank"
+              rel="noopener"
+              >Mastercard — co-led ASIA BRG events for the NYC office</a
+            >
+          </li>
+        </ol>
+      </section>
+    </main>
 
-      <li class="project-row">
-        <a class="project-thumb" href="https://github.com/jujuwong21/CSE-6242-Project" target="_blank" rel="noopener">
-          <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698eb5092fd7148dcce548b5_311%20noise%20complaints.png" alt="Visualization of NYC 311 noise complaints" loading="lazy">
-        </a>
-        <div class="project-info">
-          <a class="project-title" href="https://github.com/jujuwong21/CSE-6242-Project" target="_blank" rel="noopener">Decoding Urban Noise in NYC 311 Data</a>
-          <span class="project-meta">D3.js · Sep – Nov 2025</span>
-        </div>
-      </li>
-
-      <!--<li class="project-row">
-        <span class="project-thumb project-thumb--soon">
-          <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698eb253f8fa02a29041ac92_keypoints_squat.png" alt="Pose estimation keypoints on a squat" loading="lazy">
-        </span>
-        <div class="project-info">
-          <span class="project-title project-title--soon">Workout Pose Estimation &amp; Correction</span>
-          <span class="project-meta">Python · Jan – Apr 2025</span>
-        </div>
-      </li>-->
-
-      <li class="project-row">
-        <a class="project-thumb" href="https://github.com/jujuwong21/MGT-6203-Project" target="_blank" rel="noopener">
-          <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/6769c1549981f1a7c96351e9_UFC%20EDA.png" alt="Exploratory data analysis of UFC fights" loading="lazy">
-        </a>
-        <div class="project-info">
-          <a class="project-title" href="https://github.com/jujuwong21/MGT-6203-Project" target="_blank" rel="noopener">UFC Fight Prediction and Analysis</a>
-          <span class="project-meta">R (Tidyverse) · Feb – Apr 2024</span>
-        </div>
-      </li>
-
-      <li class="project-row">
-        <a class="project-thumb" href="https://drive.google.com/file/d/1N06SIcjneM5tt1p_nt49dgbMV0dOF_ZT/view?usp=sharing" target="_blank" rel="noopener">
-          <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/6769c09a8842b0aa7acd9891_Flu%20Simulation.png" alt="Discrete flu epidemic transmission simulation" loading="lazy">
-        </a>
-        <div class="project-info">
-          <a class="project-title" href="https://drive.google.com/file/d/1N06SIcjneM5tt1p_nt49dgbMV0dOF_ZT/view?usp=sharing" target="_blank" rel="noopener">Discrete Flu Epidemic Transmission</a>
-          <span class="project-meta">Python · Oct – Dec 2024</span>
-        </div>
-      </li>
-
-    </ul>
-  </section>
-
-  <section class="section research" id="research">
-    <h2 class="section-heading">Selected research</h2>
-    <ol class="timeline">
-      <li>
-        <span class="timeline-date">Jan — May 2021</span>
-        <span class="timeline-role">Data Modeling Research Assistant</span>
-        <a class="timeline-org" href="http://www.pitt.edu/~jwheeler/BIG%20Problems.html" target="_blank" rel="noopener">University of Pittsburgh Math Department (MLB Project)</a>
-      </li>
-      <li>
-        <span class="timeline-date">Jan — Jun 2020</span>
-        <span class="timeline-role">Data Visualization Research Assistant</span>
-        <span class="timeline-org">Carnegie Mellon Computer Science Department</span>
-      </li>
-    </ol>
-  </section>
-
-  <section class="section community" id="community">
-    <h2 class="section-heading">Community &amp; involvement</h2>
-    <ol class="timeline">
-      <li>
-        <span class="timeline-date">Aug 2021 — Present</span>
-        <span class="timeline-role">Volunteering</span>
-        <a class="timeline-org" href="https://www.newyorkcares.org/home" target="_blank" rel="noopener">New York Cares — Family Literacy Program, La Jornada Food Shelter, Sophomore Skills &amp; SAT Tutoring</a>
-      </li>
-      <li>
-        <span class="timeline-date">Mar 2024 — Dec 2025</span>
-        <span class="timeline-role">ASIA BRG Committee Member</span>
-        <a class="timeline-org" href="https://careers.mastercard.com/us/en/blogarticle/explore-mastercard-brgs" target="_blank" rel="noopener">Mastercard — co-led ASIA BRG events for the NYC office</a>
-      </li>
-    </ol>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p class="footer-name">Juliette Wong</p>
-  <ul class="footer-links">
-    <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
-    <li><a href="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698ead9f381e4fbe4ab6c293_072b8e83d6e18e28fbda3a57510f1788_JulietteWong_Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
-    <li><a href="https://www.linkedin.com/in/juliettenwong/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/jujuwong21" target="_blank" rel="noopener">GitHub</a></li>
-  </ul>
-</footer>
-
-</body>
+    <footer class="site-footer">
+      <p class="footer-name">Juliette Wong</p>
+      <ul class="footer-links">
+        <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
+        <li>
+          <a
+            href="assets/resume/juliette-wong-resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >Résumé</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/juliettenwong/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jujuwong21" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
