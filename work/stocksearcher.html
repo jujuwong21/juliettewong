@@ -1,73 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Basic Stock Searcher — Juliette Wong</title>
-<meta name="description" content="An R Shiny app for searching stock tickers and visualizing historical price data.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles-v3.css">
-<link rel="stylesheet" href="../styles-detail.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Stock Searcher: Juliette Wong</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.png" />
+    <meta
+      name="description"
+      content="An R Shiny app for searching stock tickers and visualizing historical price data."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles-detail.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="../index.html">
+        <img
+          src="../assets/images/favicon.png"
+          alt="JW"
+          width="32"
+          height="32"
+        />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="../index.html#projects">Projects</a>
+      </nav>
+    </header>
 
-<header class="site-header">
-  <a class="wordmark" href="../index-v3.html">JW</a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="../index-v3.html#about">About</a>
-    <a href="../index-v3.html#experience">Experience</a>
-    <a href="../index-v3.html#projects">Projects</a>
-    <a href="../index-v3.html#design-work">Design</a>
-  </nav>
-</header>
+    <main id="main">
+      <div class="detail-header">
+        <a class="back-link" href="../projects-archive.html"
+          >&larr; Back to projects</a
+        >
+      </div>
 
-<main id="main">
+      <div class="detail-hero">
+        <h1 class="detail-title">Basic Stock Searcher</h1>
+        <p class="detail-meta">
+          <span>Personal project</span>
+          <span class="dot"></span>
+          <span>Jul – Aug 2020</span>
+          <span class="dot"></span>
+          <span>R Shiny, tidyquant</span>
+        </p>
+      </div>
 
-  <div class="detail-header">
-    <a class="back-link" href="../projects-archive.html">&larr; Back to projects</a>
-  </div>
+      <div class="detail-body">
+        <h2>Overview</h2>
+        <p>
+          The basic stock searcher was a side project I built to learn
+          <strong>R Shiny</strong>. The app lets a user type in a stock ticker
+          and either choose from pre-set date ranges — last 3 months,
+          year-to-date, last 5 years — or define a custom range.
+        </p>
+        <p>
+          From there, the app renders a graph of the ticker's adjusted close
+          price over that period. Users can switch between a standard line
+          chart, an area chart, or a red-green area chart that visually signals
+          whether the price has risen or fallen since the start of the range.
+        </p>
 
-  <div class="detail-hero">
-    <h1 class="detail-title">Basic Stock Searcher</h1>
-    <p class="detail-meta">
-      <span>Personal project</span>
-      <span class="dot"></span>
-      <span>Jul – Aug 2020</span>
-      <span class="dot"></span>
-      <span>R Shiny, tidyquant</span>
-    </p>
-  </div>
+        <div class="detail-figure">
+          <img
+            src="../assets/images/proj-stock-searcher.png"
+            alt="Basic Stock Searcher interface showing a stock price chart"
+            loading="lazy"
+          />
+        </div>
 
-  <div class="detail-body">
+        <h2>Under the hood</h2>
+        <p>
+          Price data is pulled from Yahoo! Finance using the
+          <strong>tidyquant</strong> package. Alongside the chart, users can
+          view the underlying OHLCV (open, high, low, close, volume) data as a
+          table and download it as a CSV. The chart itself is interactive —
+          hovering over any point surfaces the exact adjusted close price for
+          that date.
+        </p>
+      </div>
+    </main>
 
-    <h2>Overview</h2>
-    <p>The basic stock searcher was a side project I built to learn <strong>R Shiny</strong>. The app lets a user type in a stock ticker and either choose from pre-set date ranges — last 3 months, year-to-date, last 5 years — or define a custom range.</p>
-    <p>From there, the app renders a graph of the ticker's adjusted close price over that period. Users can switch between a standard line chart, an area chart, or a red-green area chart that visually signals whether the price has risen or fallen since the start of the range.</p>
-
-    <div class="detail-figure">
-      <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/6769b7b998e34473723313ef_StockSearcher.png" alt="Basic Stock Searcher interface showing a stock price chart" loading="lazy">
-    </div>
-
-    <h2>Under the hood</h2>
-    <p>Price data is pulled from Yahoo! Finance using the <strong>tidyquant</strong> package. Alongside the chart, users can view the underlying OHLCV (open, high, low, close, volume) data as a table and download it as a CSV. The chart itself is interactive — hovering over any point surfaces the exact adjusted close price for that date.</p>
-
-  </div>
-
-</main>
-
-<footer class="site-footer">
-  <p class="footer-name">Juliette Wong</p>
-  <ul class="footer-links">
-    <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
-    <li><a href="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698ead9f381e4fbe4ab6c293_072b8e83d6e18e28fbda3a57510f1788_JulietteWong_Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
-    <li><a href="https://www.linkedin.com/in/juliettenwong/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/jujuwong21" target="_blank" rel="noopener">GitHub</a></li>
-  </ul>
-</footer>
-
-</body>
+    <footer class="site-footer">
+      <p class="footer-name">Juliette Wong</p>
+      <ul class="footer-links">
+        <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
+        <li>
+          <a
+            href="../assets/resume/juliette-wong-resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >Résumé</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/juliettenwong/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jujuwong21" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

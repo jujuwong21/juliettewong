@@ -1,98 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Processing Financial Data Study — Juliette Wong</title>
-<meta name="description" content="Independent research study comparing how data scientists and auditors approach financial data validation using Tableau.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles-v3.css">
-<link rel="stylesheet" href="../styles-detail.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Processing Financial Data Study: Juliette Wong</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.png" />
+    <meta
+      name="description"
+      content="Independent research study comparing how data scientists and auditors approach financial data validation using Tableau."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles-detail.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="../index.html">
+        <img
+          src="../assets/images/favicon.png"
+          alt="JW"
+          width="32"
+          height="32"
+        />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="../index.html#projects">Projects</a>
+      </nav>
+    </header>
 
-<header class="site-header">
-  <a class="wordmark" href="../index-v3.html">JW</a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="../index-v3.html#about">About</a>
-    <a href="../index-v3.html#experience">Experience</a>
-    <a href="../index-v3.html#projects">Projects</a>
-    <a href="../index-v3.html#design-work">Design</a>
-  </nav>
-</header>
+    <main id="main">
+      <div class="detail-header">
+        <a class="back-link" href="../projects-archive.html"
+          >&larr; Back to projects</a
+        >
+      </div>
 
-<main id="main">
+      <div class="detail-hero">
+        <h1 class="detail-title">Processing Financial Data Study</h1>
+        <p class="detail-meta">
+          <span>Data Visualization, Research Study Design</span>
+          <span class="dot"></span>
+          <span>Jan – Jun 2020</span>
+          <span class="dot"></span>
+          <span>Tableau, Excel</span>
+        </p>
+        <a
+          class="detail-link"
+          href="https://ieeexplore.ieee.org/document/9833097"
+          target="_blank"
+          rel="noopener"
+          >Read the published paper</a
+        >
+      </div>
 
-  <div class="detail-header">
-    <a class="back-link" href="../projects-archive.html">&larr; Back to projects</a>
-  </div>
+      <div class="detail-body">
+        <h2>Research overview</h2>
+        <p>
+          This was an independent research study I took on during my HCI minor
+          in Spring 2020, and extended into the first half of that summer after
+          my internship start date was pushed back. The goal was to understand
+          how <strong>data scientists and auditors differ</strong> in the way
+          they approach financial data validation:
+        </p>
+        <p>
+          Do the two groups favor different tools and strategies when looking
+          for fraud or outliers in a dataset? Does professional expertise shape
+          the quality of that validation work — and is there a measurable gap
+          between how data scientists and accountants read the same data?
+        </p>
 
-  <div class="detail-hero">
-    <h1 class="detail-title">Processing Financial Data Study</h1>
-    <p class="detail-meta">
-      <span>Data Visualization, Research Study Design</span>
-      <span class="dot"></span>
-      <span>Jan – Jun 2020</span>
-      <span class="dot"></span>
-      <span>Tableau, Excel</span>
-    </p>
-    <a class="detail-link" href="https://ieeexplore.ieee.org/document/9833097" target="_blank" rel="noopener">Read the published paper</a>
-  </div>
+        <h2>Study design</h2>
+        <p>
+          Rather than handing participants a raw dataset and asking them to find
+          fraud in it, we
+          <strong>pre-built the data visualizations in Tableau</strong>. Giving
+          the raw data without guidance would have put the accounting students
+          at a disadvantage, since data science students tend to be more
+          comfortable manipulating and visualizing data on their own. We also
+          expected that professional background would shape which visualization
+          types people trusted most — for instance, that auditors might lean on
+          tabular views while data scientists gravitated toward histograms and
+          scatterplots.
+        </p>
+        <p>
+          Each participant worked through visualizations built from two real
+          datasets — company expenses and company salaries/bonuses — plus a toy
+          warm-up dataset to get comfortable logging insights in the Tableau
+          interface. The underlying data came from
+          <em>Data Analytics for Auditing using ACL, 4th Edition</em>, with
+          additional columns and injected fraud to make outliers easier to
+          identify and the visualizations more interesting to explore.
+        </p>
 
-  <div class="detail-body">
+        <div class="figure-pair">
+          <figure class="detail-figure">
+            <img
+              src="../assets/images/audit-expenses-static.png"
+              alt="Static view of the company expenses dataset visualization"
+              loading="lazy"
+            />
+            <figcaption>Company expenses dataset</figcaption>
+          </figure>
+          <figure class="detail-figure">
+            <img
+              src="../assets/images/audit-salaries-static.png"
+              alt="Static view of the company salaries dataset visualization"
+              loading="lazy"
+            />
+            <figcaption>Company salaries dataset</figcaption>
+          </figure>
+        </div>
 
-    <h2>Research overview</h2>
-    <p>This was an independent research study I took on during my HCI minor in Spring 2020, and extended into the first half of that summer after my internship start date was pushed back. The goal was to understand how <strong>data scientists and auditors differ</strong> in the way they approach financial data validation:</p>
-    <p>Do the two groups favor different tools and strategies when looking for fraud or outliers in a dataset? Does professional expertise shape the quality of that validation work — and is there a measurable gap between how data scientists and accountants read the same data?</p>
+        <p>
+          Each dataset had ten different visualizations within its Tableau
+          story, mixing boxplots, bar graphs, line plots, and tables so we could
+          see whether preference varied by role. Most were interactive —
+          participants could sort, filter, and hover for more detail on any
+          given point.
+        </p>
 
-    <h2>Study design</h2>
-    <p>Rather than handing participants a raw dataset and asking them to find fraud in it, we <strong>pre-built the data visualizations in Tableau</strong>. Giving the raw data without guidance would have put the accounting students at a disadvantage, since data science students tend to be more comfortable manipulating and visualizing data on their own. We also expected that professional background would shape which visualization types people trusted most — for instance, that auditors might lean on tabular views while data scientists gravitated toward histograms and scatterplots.</p>
-    <p>Each participant worked through visualizations built from two real datasets — company expenses and company salaries/bonuses — plus a toy warm-up dataset to get comfortable logging insights in the Tableau interface. The underlying data came from <em>Data Analytics for Auditing using ACL, 4th Edition</em>, with additional columns and injected fraud to make outliers easier to identify and the visualizations more interesting to explore.</p>
+        <div class="figure-pair">
+          <figure class="detail-figure">
+            <img
+              src="../assets/images/audit-filter-tabular.gif"
+              alt="Animated demo of filtering a tabular visualization"
+              loading="lazy"
+            />
+            <figcaption>Filtering — tabular visualization</figcaption>
+          </figure>
+          <figure class="detail-figure">
+            <img
+              src="../assets/images/audit-filter-nontabular.gif"
+              alt="Animated demo of filtering a non-tabular visualization"
+              loading="lazy"
+            />
+            <figcaption>Filtering — non-tabular visualization</figcaption>
+          </figure>
+        </div>
 
-    <div class="figure-pair">
-      <figure class="detail-figure">
-        <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/5ee15665f62b2766a76f6f4c_Expenses%20Dataset-%20Static.png" alt="Static view of the company expenses dataset visualization" loading="lazy">
-        <figcaption>Company expenses dataset</figcaption>
-      </figure>
-      <figure class="detail-figure">
-        <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/5ee15579f62b2778d76f69cc_Salaries%20Dataset-Static.png" alt="Static view of the company salaries dataset visualization" loading="lazy">
-        <figcaption>Company salaries dataset</figcaption>
-      </figure>
-    </div>
+        <h2>Running the study</h2>
+        <p>
+          We ran the experiment with 16 Master's students — 8 studying Data
+          Science and 8 studying Accounting — observing how each group
+          approached the same visualizations and where their strategies
+          diverged. The full findings are written up in the published paper
+          linked above.
+        </p>
+      </div>
+    </main>
 
-    <p>Each dataset had ten different visualizations within its Tableau story, mixing boxplots, bar graphs, line plots, and tables so we could see whether preference varied by role. Most were interactive — participants could sort, filter, and hover for more detail on any given point.</p>
-
-    <div class="figure-pair">
-      <figure class="detail-figure">
-        <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/5ee15cde06d3a8d832810e72_Eastland1.gif" alt="Animated demo of filtering a tabular visualization" loading="lazy">
-        <figcaption>Filtering — tabular visualization</figcaption>
-      </figure>
-      <figure class="detail-figure">
-        <img src="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/5ee15e7ff6489de2bd8853f2_Eastland2.gif" alt="Animated demo of filtering a non-tabular visualization" loading="lazy">
-        <figcaption>Filtering — non-tabular visualization</figcaption>
-      </figure>
-    </div>
-
-    <h2>Running the study</h2>
-    <p>We ran the experiment with 16 Master's students — 8 studying Data Science and 8 studying Accounting — observing how each group approached the same visualizations and where their strategies diverged. The full findings are written up in the published paper linked above.</p>
-
-  </div>
-
-</main>
-
-<footer class="site-footer">
-  <p class="footer-name">Juliette Wong</p>
-  <ul class="footer-links">
-    <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
-    <li><a href="https://cdn.prod.website-files.com/5d97a1a61c6dca861379cff8/698ead9f381e4fbe4ab6c293_072b8e83d6e18e28fbda3a57510f1788_JulietteWong_Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
-    <li><a href="https://www.linkedin.com/in/juliettenwong/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/jujuwong21" target="_blank" rel="noopener">GitHub</a></li>
-  </ul>
-</footer>
-
-</body>
+    <footer class="site-footer">
+      <p class="footer-name">Juliette Wong</p>
+      <ul class="footer-links">
+        <li><a href="mailto:juliette.wong1998@gmail.com">Email</a></li>
+        <li>
+          <a
+            href="../assets/resume/juliette-wong-resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >Résumé</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/juliettenwong/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jujuwong21" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
