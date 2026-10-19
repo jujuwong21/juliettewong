@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -39,6 +39,7 @@
 
     <main id="main">
       <section class="hero" id="top">
+        <div class="hero-text">
         <p class="hero-kicker">
           I build reliable data products and turn complex data into useful
           insights
@@ -50,18 +51,19 @@
           I build and safeguard the data people rely on to make decisions, and
           every so often I turn it into something worth looking at.
         </p>
-        <a class="hero-scroll" href="#about">Scroll down</a>
+        <a class="hero-scroll" href="#about">A bit about me &darr;</a>
+        </div>
+        <figure class="hero-photo">
+          <img
+            src="assets/images/portrait-juliette.jpg"
+            alt="Portrait of Juliette Wong"
+            width="480"
+            height="732"
+          />
+        </figure>
       </section>
 
       <section class="section about" id="about">
-        <div class="about-grid">
-          <figure class="about-photo">
-            <img
-              src="assets/images/portrait-juliette.jpg"
-              alt="Portrait of Juliette Wong"
-              loading="lazy"
-            />
-          </figure>
           <div class="about-copy">
             <h2 class="section-heading">About</h2>
             <p>
@@ -87,7 +89,6 @@
               watching the Mets (though maybe not in 2026).
             </p>
           </div>
-        </div>
       </section>
 
       <section class="section experience" id="experience">
@@ -368,31 +369,37 @@
       <section class="section community" id="community">
         <h2 class="section-heading">Community &amp; Involvement</h2>
         <h3 class="group-heading">Volunteering &amp; Committees</h3>
-        <ol class="timeline">
-          <li>
-            <span class="timeline-date">Aug 2021 — Present</span>
-            <span class="timeline-role">Volunteering</span>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-date">Aug 2021 — Present</span>
+            <h4 class="card-title">New York Cares</h4>
+            <p class="card-body">
+              Family Literacy Program, La Jornada Food Shelter, and Sophomore
+              Skills &amp; SAT Tutoring.
+            </p>
             <a
-              class="timeline-org"
+              class="card-link"
               href="https://www.newyorkcares.org/home"
               target="_blank"
               rel="noopener"
-              >New York Cares — Family Literacy Program, La Jornada Food
-              Shelter, Sophomore Skills &amp; SAT Tutoring</a
+              >newyorkcares.org &rarr;</a
             >
-          </li>
-          <li>
-            <span class="timeline-date">Mar 2024 — Dec 2025</span>
-            <span class="timeline-role">ASIA BRG Committee Member</span>
+          </article>
+          <article class="card">
+            <span class="card-date">Mar 2024 — Dec 2025</span>
+            <h4 class="card-title">ASIA BRG Committee, Mastercard</h4>
+            <p class="card-body">
+              Co-led events for the NYC office's Asian employee resource group.
+            </p>
             <a
-              class="timeline-org"
+              class="card-link"
               href="https://www.mastercard.com/us/en/for-the-world/people/community-belonging.html"
               target="_blank"
               rel="noopener"
-              >Mastercard — co-led ASIA BRG events for the NYC office</a
+              >About Mastercard BRGs &rarr;</a
             >
-          </li>
-        </ol>
+          </article>
+        </div>
         <h3 class="group-heading">Dance Performances</h3>
         <figure class="video-embed">
           <div class="video-frame">
@@ -409,34 +416,32 @@
             NY Liberty halftime show with PMT House of Dance, August 2026
           </figcaption>
         </figure>
-        <ol class="timeline">
-          <li>
-            <span class="timeline-date">Aug 2026</span>
-            <span class="timeline-role"
-              >New York Liberty WNBA Halftime Show
-            </span>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-date">Aug 2026</span>
+            <h4 class="card-title">NY Liberty Halftime Show</h4>
+            <p class="card-body">Performed with PMT House of Dance.</p>
             <a
-              class="timeline-org"
+              class="card-link"
               href="https://www.youtube.com/watch?v=ofpBGzJnui0"
               target="_blank"
               rel="noopener"
-              >Performed with PMT House of Dance</a
+              >Watch on YouTube &rarr;</a
             >
-          </li>
-          <li>
-            <span class="timeline-date">Aug 2025</span>
-            <span class="timeline-role"
-              >New York Liberty WNBA Halftime Show
-            </span>
+          </article>
+          <article class="card">
+            <span class="card-date">Aug 2025</span>
+            <h4 class="card-title">NY Liberty Halftime Show</h4>
+            <p class="card-body">Performed with PMT House of Dance.</p>
             <a
-              class="timeline-org"
+              class="card-link"
               href="https://www.youtube.com/watch?v=gIIV_Cd8yHI"
               target="_blank"
               rel="noopener"
-              >Performed with PMT House of Dance</a
+              >Watch on YouTube &rarr;</a
             >
-          </li>
-        </ol>
+          </article>
+        </div>
       </section>
     </main>
 
